@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100 font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px theme('colors.gold.500');
+  color: transparent;
+}
+
+.parallax {
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item::after {
+  content: '';
+  @apply absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300;
+}
+
+.portfolio-item:hover::after {
+  @apply bg-opacity-20;
+}
+
+.portfolio-item img {
+  @apply transition-transform duration-700;
+}
+
+.portfolio-item:hover img {
+  @apply scale-110;
+}
+
+.golden-gradient {
+  background: linear-gradient(45deg, theme('colors.gold.600'), theme('colors.gold.400'));
+}
