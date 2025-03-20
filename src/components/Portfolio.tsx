@@ -6,8 +6,8 @@ const projects = [
     title: "Black Santa",
     category: "Short Film",
     status: "Completed",
-    image: "../../assets/ShortFilm/BlackSanta.jpg",
-    videoSrc:true,
+    image: "/MuhammedRafeek/assets/BlackSanta.jpg",
+    videoSrc: true,
     video: (
       <>
         <iframe
@@ -29,29 +29,16 @@ const projects = [
     category: "Short Film",
     status: "Upcoming",
     image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?auto=format&fit=crop&q=80",
-    videoSrc:true,
-    video: (
-      <>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/nDPeFqCUF18?si=2Z3qkrJRToA37JRv"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </>
-    ),
+    videoSrc: true,
+    video: null,
     description: "An emotional journey of self-discovery"
   },
   {
     title: "Njanum Manushyan",
     category: "Social Awareness",
     status: "Completed",
-    image: "../../assets/ShortFilm/Njanum Manushan.jpg",
-    videoSrc:true,
+    image: "/MuhammedRafeek/assets/Njanum_Manushan.jpg",
+    videoSrc: true,
     video: (
       <>
         <iframe
@@ -72,8 +59,8 @@ const projects = [
     title: "Leave It",
     category: "Anti-smoking",
     status: "Completed",
-    image: "../../assets/ShortFilm/Leave it.jpg",
-    videoSrc:true,
+    image: "/MuhammedRafeek/assets/Leave_it.jpg",
+    videoSrc: true,
     video: (
       <>
         <iframe
@@ -94,8 +81,8 @@ const projects = [
     title: "Glorious Eve",
     category: "Musical Album",
     status: "Completed",
-    image: "../../assets/ShortFilm/Glorious Eve.jpg",
-    videoSrc:true,
+    image: "/MuhammedRafeek/assets/Glorious_Eve.jpg",
+    videoSrc: true,
     video: (
       <>
         <iframe
@@ -117,7 +104,7 @@ const projects = [
     category: "Short Film",
     status: "Completed",
     image: "https://images.unsplash.com/photo-1532800783378-1bed63d3d1eb?auto=format&fit=crop&q=80",
-    videoSrc:true,
+    videoSrc: true,
     video: (
       <>
         <iframe
@@ -135,7 +122,6 @@ const projects = [
     description: "A story of survival and resilience"
   }
 ];
-
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
