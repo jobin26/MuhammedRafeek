@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { X, ExternalLink } from 'lucide-react';
+import black_santa from '../../assets/BlackSanta.jpg';
+import glorious_eve from '../../assets/Glorious_Eve.jpg';
+import leave_it from '../../assets/Leave_It.jpg';
+import njanum_manushan from '../../assets/Njanum_Manushan.jpg';
+
 
 const projects = [
   {
     title: "Black Santa",
     category: "Short Film",
     status: "Completed",
-    image: "/MuhammedRafeek/assets/BlackSanta.jpg",
+    image: black_santa,
     videoSrc: true,
     video: (
       <>
@@ -37,7 +42,7 @@ const projects = [
     title: "Njanum Manushyan",
     category: "Social Awareness",
     status: "Completed",
-    image: "/MuhammedRafeek/assets/Njanum_Manushan.jpg",
+    image: njanum_manushan,
     videoSrc: true,
     video: (
       <>
@@ -59,7 +64,7 @@ const projects = [
     title: "Leave It",
     category: "Anti-smoking",
     status: "Completed",
-    image: "/MuhammedRafeek/assets/Leave_it.jpg",
+    image: leave_it,
     videoSrc: true,
     video: (
       <>
@@ -81,7 +86,7 @@ const projects = [
     title: "Glorious Eve",
     category: "Musical Album",
     status: "Completed",
-    image: "/MuhammedRafeek/assets/Glorious_Eve.jpg",
+    image: glorious_eve,
     videoSrc: true,
     video: (
       <>
